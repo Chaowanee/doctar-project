@@ -1,0 +1,175 @@
+<html>
+  <head>
+  <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="static/css/bootstrap.css">
+  <link rel="stylesheet" href="static/css/style.css">
+  <link rel="stylesheet" href="static/css/responsive.css">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="static/js/bootstrap.js"></script>
+  </head>
+
+  <body class="background">
+    <div class="header">
+      <a href="home.html"><img src="static/image/logo.png"></a>
+      <div class="login">
+        
+        <li class="dropdown">
+          <button data-toggle="dropdown" class="dropdown-toggle" type="button">
+              <span class="username"><span class="glyphicon glyphicon-user"></span> สมชาย </span>
+          </button>
+          <ul class="dropdown-menu extended logout">
+              <li><a href="patient_page.html">
+                <span class="glyphicon glyphicon-calendar"></span> My Appointment</a></li>
+              <li><a href="setting.html">
+                <span class="glyphicon glyphicon-cog"></span> Setting</a></li>
+              <li><a href="home.html">
+                <span class="glyphicon glyphicon-user"></span> Logout</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+            <span class="glyphicon glyphicon-bell"></span>
+            <span class="badge bg-warning">3</span>
+          </a>
+          <ul class="dropdown-menu extended notification">
+            <li>
+              <div class="alert-danger clearfix">
+                <a href=""><div><span class="glyphicon glyphicon-bell"></span></div>การจองมีการเปลี่ยนเเปลง</a>
+              </div>
+            </li>
+            <li>
+              <div class="alert-danger clearfix">
+                <a href=""><div><span class="glyphicon glyphicon-bell"></span></div>การจองมีการเปลี่ยนเเปลง</a> 
+              </div>
+            </li>
+            <li>
+              <div class="alert-danger clearfix">
+                 <a href=""><div><span class="glyphicon glyphicon-bell"></span></div>โปรดยืนยันข้อมูลส่วนตัว</a>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </div>
+    </div>
+    <div class="sub-header">
+      <div class="sub container ">
+        <p> <a href="doctor_profile.html">นพ. เฉลิม อยู่บำรุง</a><span> > </span>  จองคิวเข้ารับการรักษา </p>
+      </div>
+    </div>
+
+    <div class="body appoint container">
+      <div class="appointment">
+        <div class="process">   
+          <div class="row">
+            <div class="col-md-12">
+              <ul class="breadcrumbs-alt">
+                <li class="current"><span class="info">Appointment</span> <span class="step">Step 1</span></li>
+                <li class="current"><span class="info">Patient</span> <span class="step">Step 2</span></li>
+                <li class="next"><span class="info">Detail</span> <span class="step">Step 3</span></li>    
+                <li class="last"><span class="info">Completed</span> <span class="step">Step 4</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+                
+        <div class="content">
+          <div class="row">
+          <form action="appointment_step2-2.html">
+            <p class="topic"> โปรดเลือกผู้เข้าพบแพทย์ </p>
+            <p> <input type="radio" name="name"> เดวิด  เบ็คแฮม </p>
+            <p> <input type="radio" name="name"> ผู้ป่วยท่านอื่น </p>
+
+            <div class="col-md-6">
+              <p class="topic"> ชื่อ </p>
+              <input type="text">
+            </div>
+            <div class="col-md-6 lastname">
+              <p class="topic"> สกุล </p>
+              <input type="text">
+            </div>
+
+            <div class="col-md-12">
+              <p class="topic"> วัน เดือน ปี เกิด </p>
+              <div class="form-inline" action="search_page.html">
+                <select class="form-control"><option>วัน</option></select>
+                <select class="form-control"><option>เดือน</option></select>
+                <select class="form-control"><option>ปี</option></select>
+              </div>
+              <p class="topic">  เพศ </p>
+              <input type="radio" name="sex"> หญิง
+              <input type="radio" name="sex"> ชาย
+            </div>
+          </div>
+        </div>
+        <button class="btn btn-default">Next</button>
+        </form>
+      </div>
+
+      <div class="doctor row">
+        
+          <div class="header">การนัดพบแพทย์ของคุณ</div>
+          <div class="col-md-5">
+            <img src="static/image/human.png">
+          </div>
+          <div class="col-md-7">
+            <p class="head"> นพ. เฉลิม   อยู่บำรุง</p>
+            <p>
+              <div class="rating">
+                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span class="active">☆</span>
+              </div>
+            </p>
+            <p class="topic"> ความเชี่ยวชาญ </p>
+            <p class="type"> แพทย์เวชศาสตร์ความงาม แพทย์โรคผิวหนัง</p>
+            
+          </div>
+          <div class="col-md-12">
+            <p> วีอาร์โคเรีย เอสเทสิค คลีนิค (สาขาเมืองเอก รังสิต) </p>
+            <p class="address"> 300/158-9 หมู่ที่ 13 ซ.พหลโยธิน 87 ถ.พหลโยธิน ต.คูคด อ.ลำลูกกา จ.ประทุมธานี 12130</p>
+            <p class="topic">วันและเวลานัดพบ</p>
+            <p>Sun 07 Sep 2014  08:40 PM</p>
+          </div>
+       
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <div class="logo-footer">  
+          <img src="static/image/logo.png" width="65%">
+          <p class="topic">ค้นหาหมอ, หมอฟัน <br> และนัดพบหมออน์ไลน์</p>
+          <select class="form-control">
+            <option value="">ภาษาไทย</option>
+            <option value="">ภาษาอังกฤษ</option>
+          </select>  
+        </div>
+        <div class="col-footer">
+          <p class="topic">บริษัท</p>
+          <p>เกี่ยวกับเรา</p>
+          <p>นโยบายส่วนบุคคล</p>
+          <p>ข้อตกลงการใช้งาน</p>
+          <p>ติดต่อเรา</p>
+          <p>บทความ</p>
+        </div>
+        <div class="col-footer responsive-footer">
+          <p class="topic">สำหรับคนใช้</p>
+          <p>สมัครใช้งาน</p>
+          <p>คนไข้เข้าสู่ระบบ</p>
+          <p class="topic">สำหรับหมอ</p>
+          <p>เข้าร่วม Doctar</p>
+          <p>หมอเข้าสู่ระบบ</p>
+        </div>
+        <div class="col-footer">
+          <p class="topic">ต้องการนัดพบหมอ</p>
+          <p>(+66) 02-9200514</p>
+          <p class="topic">ติดตามเรา</p>
+          <p>Facebook</p>
+          <p>Twitter</p>
+          <p>Google+</p>
+        </div>
+
+        <div class="copy-right container">Copyright @ 2015 Doctar Co.,Ltd</div>
+      </div>
+    </div>
+  </body>
+</html>

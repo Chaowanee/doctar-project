@@ -1,0 +1,354 @@
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="static/css/bootstrap.css">
+  <link rel="stylesheet" href="static/css/style.css">
+  <link rel="stylesheet" href="static/css/responsive.css">
+  
+  <script type="text/javascript" src="static/js/bootstrap.js"></script>
+  </head>
+
+  <body class="background">
+    <div class="header">
+      <a href="home.html"><img src="static/image/logo.png"></a>
+      <div class="login">
+        
+        <li class="dropdown">
+          <button data-toggle="dropdown" class="dropdown-toggle" type="button">
+              <span class="username"><span class="glyphicon glyphicon-user"></span> สมชาย </span>
+          </button>
+          <ul class="dropdown-menu extended logout">
+              <li><a href="patient_page.html">
+                <span class="glyphicon glyphicon-calendar"></span> My Appointment</a></li>
+              <li><a href="setting.html">
+                <span class="glyphicon glyphicon-cog"></span> Setting</a></li>
+              <li><a href="home.html">
+                <span class="glyphicon glyphicon-user"></span> Logout</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+            <span class="glyphicon glyphicon-bell"></span>
+            <span class="badge bg-warning">3</span>
+          </a>
+          <ul class="dropdown-menu extended notification">
+            <li>
+              <div class="alert-danger clearfix">
+                <a href=""><div><span class="glyphicon glyphicon-bell"></span></div>การจองมีการเปลี่ยนเเปลง</a>
+              </div>
+            </li>
+            <li>
+              <div class="alert-danger clearfix">
+                <a href=""><div><span class="glyphicon glyphicon-bell"></span></div>การจองมีการเปลี่ยนเเปลง</a> 
+              </div>
+            </li>
+            <li>
+              <div class="alert-danger clearfix">
+                 <a href=""><div><span class="glyphicon glyphicon-bell"></span></div>โปรดยืนยันข้อมูลส่วนตัว</a>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </div>
+    </div>
+
+    <div class="body doctor-profile container">
+      <div class="profile-overview ">
+        <div class="overview">
+          <div class="col-md-4">
+            <img src="static/image/human.png" width="100%">
+          </div>
+          <div class="col-md-8">
+            <p class="head"> นพ. เฉลิม   อยู่บำรุง</p>
+            <p>
+              <div class="rating">
+                <span>☆</span><span>☆</span><span class="active">☆</span><span class="active">☆</span><span class="active">☆</span>
+              </div>
+            </p>
+            <p class="topic"> ความเชี่ยวชาญ </p>
+            <p> แพทย์เวชศาสตร์ความงาม แพทย์โรคผิวหนัง</p>
+            <p class="topic"> ชื่อคลินิค / สถานที่ประกอบการ </p>
+            <p> วีอาร์โคเรีย เอสเทสิค คลีนิค (สาขาเมืองเอก รังสิต) </p>
+            <p> วีอาร์ อินเตอร์เนชั่นเเนล เมคโอเว่อร์คลินิค (สาขา สุขุมวิท)</p>
+          </div>
+        </div>
+
+        
+
+        <div class="map">
+          <img src="static/image/map.png" width="100%">
+        </div>
+
+        <div class="booking">
+          <div class="header"> Book an Appointment</div>
+          <div class="tab-booking">
+            <div class="row">
+              <p class="topic"> 1. เลือกเหตุผลการเข้ารับบริการ</p>
+              <p> 
+              <select class="form-control">
+                <option value="">เหตุผลการเข้ารับบริการ</option>
+              </select> 
+              </p> 
+            </div>
+            <div class="row">
+              <p class="topic"> 2. คลิกเวลานัดพบกับ นพ. เฉลิม  อยู่บำรุง</p>
+              <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">วิอาร์โคเรีย เอสเทติค คลินิค (สาขาเมืองเอก รังสิต)</a>
+                    </h4>
+                  </div>
+                  <div id="collapse1" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                      <p class="address"> 300/158-9 หมู่ที่ 13 ซ.พหลโยธิน 87 ถ.พหลโยธิน ต.คูคต อ.ลำลูกกา จ.ปทุมธานี 12130 </p>
+
+                      <p> <a href="appointment_step1.html"> 13:00 </a> </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">วิอาร์ อินเตอร์เนชั่นแนล โอเว่อร์คลินิค (สาขา สุขุมวิท)</a>
+                    </h4>
+                  </div>
+                  <div id="collapse2" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                      <p class="address"> 300/158-9 หมู่ที่ 13 ซ.พหลโยธิน 87 ถ.พหลโยธิน ต.คูคต อ.ลำลูกกา จ.ปทุมธานี 12130 </p>
+
+                      <p> <a href="appointment_step1.html"> 13:00 </a> </p>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="profile-content">
+        <div class="content">
+          <ul class="nav nav-pills" role="tablist">
+            <li role="presentation" class="active"><a href="#profile" role="tab" data-toggle="tab">Profile</a></li>
+            <li role="presentation"><a href="#review" role="tab" data-toggle="tab">Review</a></li>
+          </ul>
+
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="profile">
+              <div class="row">
+                <p class="topic"> About </p>
+                <p> เป็นผู้พัฒนาเทคโนโลยีของเลเซอร์และเครื่องให้กำเนิดแสงความเข้มสูง (Intense Pulsed Light 
+                หรือ IPL) เป็นการรักษาที่ได้รับความสนใจอย่างมากในปัจจุบัน ถึงแม้เลเซอร์และ IPL จะมี
+                คุณสมบัติทางเทคนิคที่แตกต่างกัน แต่กลไกในการทำงานใช้หลักการเดียวกัน กล่าวคือเครื่องมือ
+                ทั้งสองชนิดให้กำเนิดพลังงานแสงไปยังบริเวณผิวหนังที่มีรอยคล้ำจากกระหรือฝ้า ผิวหนังในส่วน
+                ที่มีเม็ดสีเมลานินปริมาณมากกว่าปกติจะดูดซับพลังงานแสงแล้วเปลี่ยนเป็นพลังงานความร้อน มีผลทำให้เม็ดสีเมลานินในบริเวณนั้นถูกทำลายและมีจำนวนลดลง มีผลทำให้กระหรือฝ้านั้นจางลง
+                หรือหายไป เห็นผลการรักษาได้ค่อนข้างรวดเร็ว อย่างไรก็ตามการรักษาด้วยวิธีนี้ยังมีค่าใช้จ่าย
+                ค่อนข้างสูง และเสี่ยงต่อการเกิดผลข้างเคียง โดยเฉพาะอย่างยิ่งถ้าทำการรักษาโดยผู้ที่ขาดความรู้
+                ความชำนาญ และที่สำคัญกระและฝ้ายังจะกลับมาเป็นใหม่ได้อีกเมื่อหยุดการรักษา ทั้งนี้เพราะ
+                เลเซอร์และ IPL สามารถกำจัดเม็ดสีส่วนเกินในผิวหนังได้แต่ไม่สามารถป้องกันการเกิดเม็ดสีที่
+                สะสมขึ้นมาใหม่ ดังนั้นภายหลังการรักษาด้วยเลเซอร์หรือ IPL ยังคงต้องทายาเพื่อลดจำนวน
+                เม็ดสีร่วมกับการใช้ครีมกันแดดเป็นประจำ</p>
+              </div>
+
+              <div class="row">
+                <p class="topic"> Education </p>
+                <p> - แพทยศาสตร์บัณฑิต จุฬาลงกรณ์มหาวิทยาลัย, 2524</p>
+                <p> - Skin laser surgery, Harvard Medical School, Boston, Massachusetts สหรัฐอเมริกา, 2537-2538</p>
+              </div>
+
+              <div class="row">
+                <p class="topic"> Board Certificates</p>
+                <p> - สาขา ตจวิทยา, ประเทศสหรัฐอเมริกา, 2537</p>
+                <p> - สาขา ตจวิทยา, ประเทศไทย, 2539</p> 
+              </div>
+
+              <div class="row">
+                <p class="topic"> Hospital</p>
+                <p> - โรงพยาบาลบำรุงราษฏร์</p>
+                <p> - โรงพยาบาลวิชัยยุทธ</p> 
+              </div>
+
+              <div class="row">
+                <p class="topic"> Professional Membership</p>
+                <p> - สมาคมแพทย์ผิวหนังแห่งประเทศไทย</p>
+                <p> - สมาคมแพทย์เวชศาสตร์ความงามแห่งประเทศไทย</p> 
+              </div>
+
+              <div class="row">
+                <p class="topic"> Awaards and Publications</p>
+                <p> - เกียรตินิยม เหรียญทอง สาขา ตจวิทยา</p>
+                <p> - แพทย์รับเชิญรายการ "รู้ทัน รักษาโรค"</p> 
+              </div>
+
+              <div class="row">
+                <p class="topic"> Language</p>
+                <p> - Thai, English, Chinese</p> 
+              </div>
+
+            </div>
+
+            <div role="tabpanel" class="tab-pane" id="review">
+              <p>
+                <div class="rating">
+                  <span class="head"> Average Rating </span> 
+                  <span>☆</span><span>☆</span><span class="active">☆</span><span class="active">☆</span><span class="active">☆</span>
+                </div> 
+                   
+              </p>
+              <p>
+                <div class="rating">
+                  <span class="head"> Bedside Manner </span> 
+                  <span>☆</span><span>☆</span><span class="active">☆</span><span class="active">☆</span><span class="active">☆</span>
+                </div>    
+              </p>
+              <p>
+                <div class="rating">
+                  <span class="head"> Wait Time </span> 
+                  <span>☆</span><span>☆</span><span class="active">☆</span><span class="active">☆</span><span class="active">☆</span>
+                </div>     
+              </p>
+              
+              <div class="row">
+                <div class="col-md-12 topic">Jan 9, 2558 by Julian G.</div>
+                <div class="type-rating">
+                  <p>
+                    <div class="rating">
+                      <span>☆</span><span>☆</span><span class="active">☆</span><span class="active">☆</span><span class="active">☆</span>
+                    </div>     
+                  </p>
+                  <p> Overall Rating </p>
+                </div>
+                <div class="type-rating">
+                  <p>
+                    <div class="rating">
+                      <span>☆</span><span>☆</span><span class="active">☆</span><span class="active">☆</span><span class="active">☆</span>
+                    </div>     
+                  </p>
+                  <p> Overall Rating </p>
+                </div>
+                <div class="type-rating">
+                  <p>
+                    <div class="rating">
+                      <span>☆</span><span>☆</span><span class="active">☆</span><span class="active">☆</span><span class="active">☆</span>
+                    </div>     
+                  </p>
+                  <p> Overall Rating </p>
+                </div>
+                <div class="col-md-12">
+                  Dr. Ahn id the best doctor I've ever seen. He genuinely wanted to get to the bottom of any and all potentail issues, without showing an ounce of jugement. Very personable and knowledgeable.
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 topic">Jan 9, 2558 by Julian G.</div>
+                <div class="type-rating">
+                  <p>
+                    <div class="rating">
+                      <span>☆</span><span>☆</span><span class="active">☆</span><span class="active">☆</span><span class="active">☆</span>
+                    </div>     
+                  </p>
+                  <p> Overall Rating </p>
+                </div>
+                <div class="type-rating">
+                  <p>
+                    <div class="rating">
+                      <span>☆</span><span>☆</span><span class="active">☆</span><span class="active">☆</span><span class="active">☆</span>
+                    </div>     
+                  </p>
+                  <p> Overall Rating </p>
+                </div>
+                <div class="type-rating">
+                  <p>
+                    <div class="rating">
+                      <span>☆</span><span>☆</span><span class="active">☆</span><span class="active">☆</span><span class="active">☆</span>
+                    </div>     
+                  </p>
+                  <p> Overall Rating </p>
+                </div>
+                <div class="col-md-12">
+                  Dr. Ahn id the best doctor I've ever seen. He genuinely wanted to get to the bottom of any and all potentail issues, without showing an ounce of jugement. Very personable and knowledgeable.
+                </div>
+              </div>
+              <div class="row last">
+                <div class="col-md-12 topic">Jan 9, 2558 by Julian G.</div>
+                <div class="type-rating">
+                  <p>
+                    <div class="rating">
+                      <span>☆</span><span>☆</span><span class="active">☆</span><span class="active">☆</span><span class="active">☆</span>
+                    </div>     
+                  </p>
+                  <p> Overall Rating </p>
+                </div>
+                <div class="type-rating">
+                  <p>
+                    <div class="rating">
+                      <span>☆</span><span>☆</span><span class="active">☆</span><span class="active">☆</span><span class="active">☆</span>
+                    </div>     
+                  </p>
+                  <p> Overall Rating </p>
+                </div>
+                <div class="type-rating">
+                  <p>
+                    <div class="rating">
+                      <span>☆</span><span>☆</span><span class="active">☆</span><span class="active">☆</span><span class="active">☆</span>
+                    </div>     
+                  </p>
+                  <p> Overall Rating </p>
+                </div>
+                <div class="col-md-12">
+                  Dr. Ahn id the best doctor I've ever seen. He genuinely wanted to get to the bottom of any and all potentail issues, without showing an ounce of jugement. Very personable and knowledgeable.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <div class="logo-footer">  
+          <img src="static/image/logo.png" width="65%">
+          <p class="topic">ค้นหาหมอ, หมอฟัน <br> และนัดพบหมออน์ไลน์</p>
+          <select class="form-control select">
+            <option value="">ภาษาไทย</option>
+            <option value="">ภาษาอังกฤษ</option>
+          </select>  
+        </div>
+        <div class="col-footer">
+          <p class="topic">บริษัท</p>
+          <p>เกี่ยวกับเรา</p>
+          <p>นโยบายส่วนบุคคล</p>
+          <p>ข้อตกลงการใช้งาน</p>
+          <p>ติดต่อเรา</p>
+          <p>บทความ</p>
+        </div>
+        <div class="col-footer responsive-footer">
+          <p class="topic">สำหรับคนใช้</p>
+          <p>สมัครใช้งาน</p>
+          <p>คนไข้เข้าสู่ระบบ</p>
+          <p class="topic">สำหรับหมอ</p>
+          <p>เข้าร่วม Doctar</p>
+          <p>หมอเข้าสู่ระบบ</p>
+        </div>
+        <div class="col-footer">
+          <p class="topic">ต้องการนัดพบหมอ</p>
+          <p>(+66) 02-9200514</p>
+          <p class="topic">ติดตามเรา</p>
+          <p>Facebook</p>
+          <p>Twitter</p>
+          <p>Google+</p>
+        </div>
+
+        <div class="copy-right container">Copyright @ 2015 Doctar Co.,Ltd</div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  </body>
+  </html>

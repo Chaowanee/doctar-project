@@ -1,0 +1,402 @@
+@media (max-width: 1200px) {
+    .join .about img {width:60%;}
+    .home .video .bg-search, 
+    .home .video .search-box {width: 56%; left:20%;}
+    .home .video .search-box .topic {font-size: 26px;}
+
+
+    .home .more-info .topic {font-size: 25px;}
+
+    .container,
+    
+    .patient.container,
+    .setting.container,
+    .home.container,
+    .join.container,
+    .appoint.container {width: 100%; padding: 4% 2%;}
+
+    .home .more.container {padding:2%;}
+    .sub.container {padding: 0 0 0 25px;}
+
+    .search.container {width: 92%; padding:0% 2% 4% 2%;}
+    .search .search-box {width: 92%;}
+
+    
+}
+
+@media (max-width: 1015px) {
+    .join .about img {width:65%;}
+    .join .intro button {font-size: 18px;}
+
+    .breadcrumbs-alt li.current, .breadcrumbs-alt li {padding: 2% 3%;}
+
+
+
+}
+
+@media (max-width: 992px) {
+
+    .doctor-profile.container {width: 100%; padding: 4% 2%;}
+    .home .video .bg-search, .home .video .search-box {width: 66%; left:18%; height: 165px;}
+    .home .video .search-box p {font-size: 16px;}
+    .home .video .search-box .topic {font-size: 26px;}
+
+    .patient .col-md-2 {width: 20%; float: left;}
+    .patient .col-md-8 {width: 60%; float: left;}
+
+    .doctor-profile .col-md-4 {width: 30%; float: left;}
+    .doctor-profile .col-md-8 {width: 70%; float: left;}
+
+    .search .map {display: none;}
+    .search .search-box {width: 96%; padding-top: 50px;}
+    .search.container {width: 100%;}
+    
+
+    .join .intro .col-md-6 {width: 30%; float: left;}
+    .join .about img {width:70%;}
+    .join .intro h1 {font-size: 30px;}
+    .join .intro p {font-size: 20px;}
+
+    .join .partner .topic {font-size: 24px;}
+
+    .join .infomation .topic {font-size: 20px;}
+    .join .infomation p {font-size: 17px;}
+    /*.breadcrumbs-alt li.current, .breadcrumbs-alt li {padding: 2% 5%;}*/
+    .footer .container select {width: 70%;}
+}
+
+
+@media (max-width: 900px) {
+    .home .search-box .topic {font-size: 26px; }
+    .home .more-info .topic {
+        font-size: 24px;
+        margin:2% 0 1% 0;
+    }
+    .join .about img {width:80%;}
+    .join .partner, .join .intro {padding: 5% 0;}
+
+    .breadcrumbs-alt li.current, .breadcrumbs-alt li {padding: 1.6% 4.5%;}
+
+    .appoint .appointment,
+    .appoint .doctor {float: none; width: 100%;}
+    .appoint .doctor .col-md-5 {width: 20%; float: left;}
+    .appoint .doctor .col-md-7 {width: 30%; float: left;}
+    .appoint .doctor .col-md-12 {width: 50%; float: left;}
+
+    .appoint .doctor .header {padding: 15px 0 0% 5%;}
+
+    .home .more.container {padding: 5% 2%;}
+    .doctor-profile .nav-pills > li a {font-size: 16px;}
+
+    .home .video video{width: 140%;}
+    .home .video {height: 70%;}
+
+}
+
+@media (max-width: 850px) {
+    /*.breadcrumbs-alt li.current, .breadcrumbs-alt li {padding: 2% 6.3%;}*/
+
+    .join .intro button {font-size: 18px;}
+    .join .intro h1 {font-size: 26px;}
+    .join .infomation p {font-size: 16px;}
+
+    .join .infomation .topic,
+    .join .intro p {font-size: 19px;}
+    
+    
+    .doctor-profile .overview {width: 100%; height: auto;}
+    .doctor-profile .col-md-4 {width: 35%;} 
+    .doctor-profile .col-md-8 {width: 65%;}
+    .doctor-profile .profile-overview .map {display: none;}
+    .doctor-profile .overview p {font-size: 16px;}
+
+    .doctor-profile .content,
+    .doctor-profile .booking {width: 100%; margin-bottom: 4%;}
+
+    .patient .tab-content .head {font-size: 16px;}
+}
+
+@media (max-width: 767px) {
+    .home .video .bg-search, .home .video .search-box {
+        width: 100%; 
+        left: 0%; 
+        height: 150px;
+        bottom:30%;
+    }
+
+    .home .video .search-box .topic {font-size: 22px;}
+
+    .home .doctor {padding:5% 2%;}
+    .home .doctor .choice p {display: none;}
+    .home .doctor .choice .topic {display: block; font-size: 18px;}
+
+    .home .more-info p {font-size: 17px;}
+    .home .more-info .topic {font-size: 22px;}
+
+    .breadcrumbs-alt li.current, .breadcrumbs-alt li {padding: 2% 4.5%;}
+    .join .intro {padding: 6% 0;}
+    .join .intro p {line-height: 150%;}
+    .join .intro h1 {font-size: 26px; padding-bottom: 2%;}
+
+    .setting .date select {float: left; margin-right: 2%;}
+
+    .setting .body-setting .content {width: 100%;}
+
+    .form-inline .form-control {display: inline-block;}
+
+    .patient .nav-pills li {font-size: 16px;}
+    .patient .button button {font-size: 14px;}
+    .patient .tab-content p {font-size: 14px;}
+}
+
+@media (max-width: 690px) {
+    .sub-header p {font-size: 18px;}
+
+    .home .more-info {height: 300px;}
+
+    .appoint .appointment .col-md-12, .appoint .appointment .col-md-6 {padding:0 0 0 4%}
+    .home .video .search-box p {font-size: 16px;}
+    .home .video .search-box .topic {font-size: 22px;}
+
+    .join .intro h1 {font-size: 24px;}
+    .join .infomation .topic, .join .intro p {font-size: 18px;}
+    .join .about img {width: 90%;}
+    .join .partner .row {margin: 0px;}
+    .join .partner .partner-left, .join .partner .partner-right {padding: 0 2%;}
+
+    .breadcrumbs-alt li.current, .breadcrumbs-alt li { font-size: 14px;}
+    .appoint .appointment .select {width: 80%;}
+
+    .join .partner p {font-size: 17px;}
+
+    .patient .col-md-8 {width: 70%; padding-right: 0px;}
+    .patient .col-md-2 {width: 30%;}
+    .patient .button {width: 100%;}
+    .patient .button button {width: 24%; padding:1.8%; margin:1% 5%; float: right;}
+
+    .setting .body-setting .row button,
+    .setting {font-size: 14px;}
+    .setting .topic {font-size: 16px;}
+}
+
+@media (max-width: 607px) {
+    .home .more-info {height: 280px;}
+    .header img {width: 120px;}
+    .home .video .bg-search, .home .video .search-box {
+        padding: 1px 2% 1px 2%;
+        height: 140px;
+        bottom: 40%;
+    }
+
+    .join .partner button,
+    .join .intro button {font-size: 16px;}
+
+    .header .login > li, .header .login p {width: 90px;}
+    .header span {font-size: 16px;}
+
+    
+    .breadcrumbs-alt li.current, .breadcrumbs-alt li {padding: 2% 4%;}   
+
+    .search .table .image {width: 35%}
+    .search .table .infomation {width: 65%;}
+    .search .table .day {width: 0px;}
+
+    .join .intro p, .join .partner p {font-size: 14px;}
+    .join .partner .topic {font-size: 20px;}
+    .join .infomation p {font-size: 15px;}
+    .join .row {padding: 0 4%;}
+    .join .partner .partner-left, .join .partner .partner-right {width: 100%;}
+
+    
+
+    .modal-content p {font-size: 15px;}
+
+    .footer .col-footer, .footer .logo-footer {
+        float: none;
+        display: inline-block;
+        width: 35%;
+    }
+    
+    .footer  {padding-top:30px;}
+    .footer .responsive-footer, .footer .logo-footer {width: 55%;}
+    .footer img {width: 70%;}
+
+    .home .video video{width: 150%;}
+    .home .video {height: 60%;}
+
+@media (max-width: 540px) {
+    .sub-header p {font-size: 16px;}
+    .header img {width: 100px;}
+    .header .login .dropdown-menu span {padding: 0 1%;}
+
+    .home .more-info {height: 250px;}
+    .appoint .appointment .col-md-12, .appoint .appointment .col-md-6 {padding:0 0 0 2%}
+    .breadcrumbs-alt li.current, .breadcrumbs-alt li {padding: 2% 3%;}
+
+    .home .more {padding-top: 35px;}
+    .home .doctor {padding: 4% 0;}
+
+    .join .infomation {width: 100%;}
+    .join .partner .row {padding: 0px;}
+    .join .about img {width: 100%;}
+    .join .intro h1 {font-size: 20px;}
+    .join .intro span {display: block;}
+    .join .about img {width: 95%;}
+    .join .intro button {font-size: 14px;}
+
+    .appoint .doctor .col-md-5 {width: 35%; float: left;}
+    .appoint .doctor .col-md-7 {width: 65%; float: left;}
+    .appoint .doctor .col-md-12 {width: 100%; margin-top: 5%;}
+    .appoint .doctor .head,
+    .appoint .doctor,
+    .appoint .appointment .content p {font-size: 14px;}
+    .appoint .doctor .header {padding: 15px 0 0% 5%;}
+
+
+    .doctor-profile .col-md-8,
+    .doctor-profile .col-md-4 {width: 100%; text-align: center;}
+    .doctor-profile .col-md-4 img {width: 50%; margin-bottom: 15px;}
+
+    .doctor-profile .booking .topic,
+    .doctor-profile .overview .head,
+    .doctor-profile .tab-content p {font-size: 15px;}
+
+    .doctor-profile .tab-content p,
+    .panel-title a, .panel-title a:hover,
+    .doctor-profile .overview p {font-size: 14px;}
+
+    .doctor-profile .address {font-size: 12px;}
+
+    .rating {text-align: center;}
+
+    .patient .col-md-8 {width: 100%; padding-top:10px;}
+    .patient .col-md-2 {width: 100%;}
+    .patient .col-md-2 img {width: 40%;}
+    .patient .button {width: 100%;}
+    .patient .button button {width: 40%; float: right;}
+    
+    .patient .nav-pills li {font-size: 15px;}
+    .search .search-box {padding-top: 15px;}
+    .search .search-box button {width: 20%;}
+    .search .search-box input[type="text"],
+    .search .search-box select {width: 65%; margin-top: 10px; margin-right: 5px; font-size: 14px;}
+    .search .table td p,
+    .search .table p a {font-size: 14px;} 
+    .search .table .address {font-size: 13px;}
+    .search .table button {font-size: 13px;}
+
+    .join .partner p {margin-top: 8px; margin-bottom: 4px;}
+
+
+}
+
+@media (max-width: 480px) {
+    .home .video .bg-search, .home .video .search-box {
+        bottom: 60%;
+        height: 230px;
+        bottom: 50%;
+        display: block;
+    }
+    .home .video .search-box .topic  {font-size: 14px;}
+    .home .video .search-box p {font-size: 12px; text-align: center;}
+    .home .video .form-inline input,
+    .home .video .form-inline select {width: 80%; margin: 1% 0;}
+    .home .video .form-inline button {width: 30%; margin-top:2%;}
+
+    .header .login > li, .header .login p {width: 80px;}
+    .header a,
+    .header span {font-size: 14px;}
+    .breadcrumbs-alt li.current, .breadcrumbs-alt li {padding: 2% 2.5%;}
+
+    .home .more-info p {font-size: 15px;}
+    .home .more-info .topic {font-size: 20px;}
+    .home .doctor .choice .topic {font-size: 16px;}
+    
+
+    .home .video .search-box p {font-size: 14px;}
+    .home .video .search-box .topic {font-size: 18px;}
+
+    .join .intro {padding: 7% 0;}
+    .nav > li > a {padding: 8px;}
+
+    .search .search-box p {font-size: 14px;}
+    .patient .patient-list {font-size: 14px;}
+    .patient .tab-content .head {font-size: 16px;}
+
+    .footer p {font-size: 12px;}
+    .footer .topic {font-size: 13px;}
+
+    .doctor-profile .tab-content span.head {font-size: 14px; width: 175px;}
+    .doctor-profile .tab-content .row .col-md-12 {font-size: 13px;}
+    .doctor-profile .tab-content .type-rating p, .doctor-profile .tab-content .rating {
+        padding-left: 10px;
+        font-size: 13px;
+    }
+
+    #login .modal-content {width: 100%; left:0px;}
+
+    .home .video video{width: 150%;}
+    .home .video {height: 50%;}
+
+    .modal-body p {margin: 0 0 6px}
+    .modal-title,
+    .modal-body button {font-size: 14px;}
+
+}
+
+@media (max-width: 438px) {
+    .breadcrumbs-alt span.info {display: none;}
+    .breadcrumbs-alt span.step {display: block;}
+    .breadcrumbs-alt li.current, .breadcrumbs-alt li {padding: 2% 2%; margin-left: 2%}
+
+    .appoint .doctor {font-size: 13px;}
+    .setting .body-setting .row select {width: 30%; padding-right: 0px;}
+    .setting .body-setting .row .number {width: 20%;}
+    .setting .body-setting .row .month {width: 42%;}
+    
+    .footer .logo-footer {width: 50%;}
+    .footer .col-footer {width: 48%;}
+
+}
+@media (max-width: 418px) {
+
+    /*.breadcrumbs-alt li.current, .breadcrumbs-alt li {padding: 2% 3.3%;}*/
+    .home .more-info p {font-size: 14px;}
+
+    .search .search-box p {font-size: 12px;}
+
+    .nav-pills > li  > a span {display: none;}
+    .patient .tab-content p {font-size: 12px;}
+    .patient .tab-content .head {font-size: 14px;}
+    .patient .button button {font-size: 12px;} 
+
+    .modal-body .name {width: 100%;}
+    .modal-body .input {width: 100%;}
+} 
+
+@media (max-width: 378px) {
+    .home .video video{width: 155%;}
+    .home .video {height: 45%;}
+    .home .video .bg-search, .home .video .search-box {
+        bottom: 55%;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        height: 210px;
+    }
+    .home .video .search-box p {font-size: 12px;}
+    .home .video .search-box .topic {font-size: 16px;}
+
+    .home .doctor .choice .topic {font-size: 15px;}
+
+    .search .search-box {width: 96%;}
+    .search-box input[type="radio"] {margin:0 1%;}
+}
+
+@media (max-width: 335px) {
+    .search .search-box {width: 97.5%;}
+}
+
+
+
+
+

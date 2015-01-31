@@ -1,0 +1,178 @@
+<html>
+  <head>
+  <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="static/css/bootstrap.css">
+  <link rel="stylesheet" href="static/css/style.css">
+  <link rel="stylesheet" href="static/css/responsive.css">
+  
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="static/js/bootstrap.js"></script>
+  </head>
+
+  <body>
+    <div class="header">
+      <a href="home.html"><img src="static/image/logo.png"></a>
+      <div class="login">
+        
+        <li class="dropdown">
+          <button data-toggle="dropdown" class="dropdown-toggle" type="button">
+              <span class="username"><span class="glyphicon glyphicon-user"></span> สมชาย </span>
+          </button>
+          <ul class="dropdown-menu extended logout">
+              <li><a href="patient_page.html">
+                <span class="glyphicon glyphicon-calendar"></span> My Appointment</a></li>
+              <li><a href="setting.html">
+                <span class="glyphicon glyphicon-cog"></span> Setting</a></li>
+              <li><a href="home.html">
+                <span class="glyphicon glyphicon-user"></span> Logout</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+            <span class="glyphicon glyphicon-bell"></span>
+            <span class="badge bg-warning">3</span>
+          </a>
+          <ul class="dropdown-menu extended notification">
+            <li>
+              <div class="alert-danger clearfix">
+                <a href=""><div><span class="glyphicon glyphicon-bell"></span></div>การจองมีการเปลี่ยนเเปลง</a>
+              </div>
+            </li>
+            <li>
+              <div class="alert-danger clearfix">
+                <a href=""><div><span class="glyphicon glyphicon-bell"></span></div>การจองมีการเปลี่ยนเเปลง</a> 
+              </div>
+            </li>
+            <li>
+              <div class="alert-danger clearfix">
+                 <a href=""><div><span class="glyphicon glyphicon-bell"></span></div>โปรดยืนยันข้อมูลส่วนตัว</a>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </div>
+    </div>
+    <div class="sub-header">
+      <div class="sub container ">
+        <p> Setting </p>
+      </div>
+    </div>
+
+    <div class="body setting container">
+      <div class="body-setting">
+      
+        <div class="row">   
+          <div class="topic"> Personal Infomation</div>
+          <div class="content">
+            <div class="col-md-12">
+              <div class="setting-left">
+                <p> ชื่อจริง </p>
+                <input type="text" class="form-control">
+              </div>
+              <div class="setting-right">
+                <p> นามสกุล </p>
+                <input type="text" class="form-control">
+              </div>
+
+              <div class="setting-left">
+                <p> อีเมล์ </p>
+                <input type="text" class="form-control">
+              </div>
+              <div class="setting-right">
+                <p> เบอร์โทรศัพท์ </p>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="col-md-12">
+              <p> เพศ </p>        
+              <select class="form-control">
+                <option value="">ชาย</option>
+              </select> 
+              
+              <p> วันเกิด </p>
+              <div class="form-inline date">
+                <select class="form-control number">
+                  <option> 1</option>
+                  <option> 2</option>
+                  <option> 3</option>
+                </select>
+                <select class="form-control month">
+                  <option> มกราคม</option>
+                  <option> กุมภาพันธ์</option>
+                  <option> มีนาคม</option>
+                </select>
+                <select class="form-control">
+                  <option> 2524</option>
+                  <option> 2525</option>
+                  <option> 3526</option>
+                </select>
+              </div>
+
+              <div class="center"><button class="btn btn-default"> Save </button></div>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="row">  
+          <div class="topic"> Password</div>
+          <div class="content">
+            <div class="col-md-12">
+              <p> รหัสผ่านปัจจุบัน </p>
+              <input type="text" class="form-control password">
+
+              <p> รหัสผ่านใหม่ </p>
+              <input type="text" class="form-control password">
+
+              <p> ยืนยันรหัสผ่านใหม่ </p>
+              <input type="text" class="form-control password">
+
+              <div class="center"><button class="btn btn-default"> Save </button></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <div class="logo-footer">  
+          <img src="static/image/logo.png" width="65%">
+          <p class="topic">ค้นหาหมอ, หมอฟัน <br> และนัดพบหมออน์ไลน์</p>
+          <select class="form-control">
+            <option value="">ภาษาไทย</option>
+            <option value="">ภาษาอังกฤษ</option>
+          </select>  
+        </div>
+        <div class="col-footer">
+          <p class="topic">บริษัท</p>
+          <p>เกี่ยวกับเรา</p>
+          <p>นโยบายส่วนบุคคล</p>
+          <p>ข้อตกลงการใช้งาน</p>
+          <p>ติดต่อเรา</p>
+          <p>บทความ</p>
+        </div>
+        <div class="col-footer responsive-footer">
+          <p class="topic">สำหรับคนใช้</p>
+          <p>สมัครใช้งาน</p>
+          <p>คนไข้เข้าสู่ระบบ</p>
+          <p class="topic">สำหรับหมอ</p>
+          <p>เข้าร่วม Doctar</p>
+          <p>หมอเข้าสู่ระบบ</p>
+        </div>
+        <div class="col-footer">
+          <p class="topic">ต้องการนัดพบหมอ</p>
+          <p>(+66) 02-9200514</p>
+          <p class="topic">ติดตามเรา</p>
+          <p>Facebook</p>
+          <p>Twitter</p>
+          <p>Google+</p>
+        </div>
+
+        <div class="copy-right container">Copyright @ 2015 Doctar Co.,Ltd</div>
+      </div>
+    </div>
+  </body>
+</html>
