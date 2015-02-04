@@ -101,12 +101,13 @@ body.background {background-color: #f2f2f2;}
 
 #register .modal-content,
 #login .modal-content{
-    width: 100%;
     text-align:center; 
     padding:0px;
     font-size: 17px;
 }
-#login .modal-content {width: 80%; left:10%;}
+
+#register .modal-content {width: 50%; left:25%;}
+#login .modal-content {width: 35%; left:32%;}
 
 .modal-content .modal-footer {
     text-align: left; 

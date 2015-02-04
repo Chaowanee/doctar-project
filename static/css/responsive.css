@@ -21,6 +21,8 @@
     .search.container {width: 92%; padding:0% 2% 4% 2%;}
     .search .search-box {width: 92%;}
 
+    #login .modal-content {width: 50%; left:25%;}
+
     
 }
 
@@ -29,6 +31,8 @@
     .join .intro button {font-size: 18px;}
 
     .breadcrumbs-alt li.current, .breadcrumbs-alt li {padding: 2% 3%;}
+
+
 
 
 
@@ -114,6 +118,9 @@
     .doctor-profile .booking {width: 100%; margin-bottom: 4%;}
 
     .patient .tab-content .head {font-size: 16px;}
+
+    #register .modal-content {width: 70%; left:15%;}
+    #login .modal-content {width: 60%; left:20%;}
 }
 
 @media (max-width: 767px) {
@@ -223,6 +230,9 @@
 
     .home .video video{width: 150%;}
     .home .video {height: 60%;}
+
+    #login .modal-content {width: 80%; left:10%;}
+    #register .modal-content {width: 90%; left:5%;}
 
 @media (max-width: 540px) {
     .sub-header p {font-size: 16px;}
