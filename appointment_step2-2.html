@@ -76,24 +76,116 @@
         <form action="appointment_step3-1.html">
         <div class="content">
           <div class="login-box">
-            
-            <div class="head">Doctar Login </div>
-            <div class="body">
-              <div class="col-md-4 form-name">
-                <p> Email </p>
-                <p> Password </p>
+            <div class="panel-group" id="accordion">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Doctar Login</a>
+                  </h4>
+                </div>
+                <div id="collapse1" class="panel-collapse collapse in">
+                  <div class="panel-body">
+                    <div class="row">
+                      <div class="name">
+                        <p> E-mail </p>
+                      </div>
+                      <div class="input">
+                        <p><input type="text" class="form-control" placeholder="อีเมลแอดเดรส"></p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="name">
+                        <p> Password </p>
+                      </div>
+                      <div class="input">
+                        <p><input type="text" class="form-control" placeholder="รหัสผ่าน"></p>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <p class="forgot"> Forgot your password? </p>
+                    </div>
+                    
+                    <button class="btn btn-default"> Sign in </button>
+                  </div>
+                </div>
               </div>
-              <div class="col-md-8 form-input">
-                <p><input type="text"></p>
-                <p><input type="text"></p>
+              <div class="panel panel-default">
+                <div class="panel-heading regist">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Sign up (Don't have an account)</a>
+                  </h4>
+                </div>
+                <div id="collapse2" class="panel-collapse collapse">
+                  <div class="panel-body body">
+                    <div class="row">
+                      <div class="name">
+                        <p> E-mail </p>
+                      </div>
+                      <div class="input">
+                        <p><input type="text" class="form-control" placeholder="อีเมลแอดเดรส"></p>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="name">
+                        <p> Password </p>
+                      </div>
+                      <div class="input">
+                        <p><input type="text" class="form-control" placeholder="รหัสผ่าน"></p>
+                      </div>
+                    </div>
+                    
+                    <div class="row">
+                      <div class="name">
+                        <p> ชื่อจริง </p>
+                      </div>
+                      <div class="input">
+                        <p><input type="text" class="form-control" placeholder="ชื่อจริง"></p>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="name">
+                        <p> นามสกุล </p>
+                      </div>
+                      <div class="input">
+                        <p><input type="text" class="form-control" placeholder="นามสกุล"></p>
+                      </div>
+                    </div>
+                    
+                    <div class="row">
+                      <div class="name">
+                        <p> วันเกิด </p>
+                      </div>
+                      <div class="form-inline input">
+                        <select class="form-control"> <option value="">วัน</option></select>
+                        <select class="form-control"> <option value="">เดือน</option></select>
+                        <select class="form-control"> <option value="">ปี</option></select>
+                      </div>
+                    </div>
+                      
+                    <div class="row">
+                      <div class="name">
+                        <p> เพศ </p>
+                      </div>
+                      <div class="input input-radio">
+                        <p>
+                          <input type="radio" name="sex"> <span>ชาย</span> 
+                          <input type="radio" name="sex"> <span>หญิง</span>
+                        </p>
+                      </div>
+                    </div>
+                  
+                    <p class="checkbox"> <input type="checkbox"> 
+                    ฉันได้อ่านและยอมรับ <a href="">ข้อตกลง</a> เรียบร้อยแล้ว </p>
+                    
+                    <button class="btn btn-default"> Sign up </button>
+                  </div>
+                </div>
               </div>
-              <div class="row">
-                <p class="forgot"> Forgot your password? </p>
-              </div>
-              
-              <button class="btn btn-default"> Sign in </button>
-            </div>
-            <div class="foot">Sign up (Don't have an account)</div>
+            </div> 
+
           </div>
         </div>
         <button class="btn btn-default">Next</button>

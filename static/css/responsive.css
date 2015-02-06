@@ -19,7 +19,7 @@
     .sub.container {padding: 0 0 0 25px;}
 
     .search.container {width: 92%; padding:0% 2% 4% 2%;}
-    .search .search-box {width: 92%;}
+   /* .search .search-box {width: 92%;}*/
 
     #login .modal-content {width: 50%; left:25%;}
 
@@ -52,7 +52,7 @@
     .doctor-profile .col-md-8 {width: 70%; float: left;}
 
     .search .map {display: none;}
-    .search .search-box {width: 96%; padding-top: 50px;}
+    /*.search .search-box {width: 96%; padding-top: 50px;}*/
     .search.container {width: 100%;}
     
 
@@ -398,12 +398,12 @@
 
     .home .doctor .choice .topic {font-size: 15px;}
 
-    .search .search-box {width: 96%;}
+    /*.search .search-box {width: 96%;}*/
     .search-box input[type="radio"] {margin:0 1%;}
 }
 
 @media (max-width: 335px) {
-    .search .search-box {width: 97.5%;}
+    /*.search .search-box {width: 97.5%;}*/
 }
 
 

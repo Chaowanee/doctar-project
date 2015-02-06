@@ -1,11 +1,13 @@
 <html>
   <head>
   <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <link rel="stylesheet" href="static/css/bootstrap.css">
   <link rel="stylesheet" href="static/css/style.css">
   <link rel="stylesheet" href="static/css/responsive.css">
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script type="text/javascript" src="static/js/bootstrap.js"></script>
+  <script type="text/javascript" src="static/js/jquery.sticky-kit.js"></script>
   </head>
 
   <body class="background">
@@ -90,7 +92,7 @@
                 <img src="static/image/human.png">
                 <button class="btn btn-default">ดูรายละเอียด</button>
               </td>
-              <td width="38%" class="infomation">
+              <td width="40%" class="infomation">
                 <p class="topic"> <a href="doctor_profile.html"> 
                   นพ. สุทธิศักดิ์  เรื่องปราชญ์ </a></p>
                 <p>ศัลยแพทย์ตกแต่ง</p>
@@ -103,7 +105,7 @@
                 <p class="name">VR Korea Aesthetic Clinic</p>
                 <p class="address">185 อาคารธรรมเลิศ ชั้น 3 ถ.สุขุมวิท คลองเตียเหนือ วัฒนา กรุงเทพมหานคร 10110</p>
               </td>
-              <td width="42%" class="day">
+              <td width="40%" class="day">
                 <div></div>
               </td>
             </tr>
@@ -210,6 +212,9 @@
           </nav>
         </div>
       </div>
+     <!--  <div class="col-md-4">
+        
+      </div> -->
     </div>
 
     <div class="footer">
@@ -359,6 +364,75 @@
           </div>
         </div>
       </div>
-    </div> 
+    </div>
+
+    <script type="text/javascript">
+      (function() {
+        var win = $(window);
+        var sizes = {
+          half: 0.5,
+          full: 1,
+          threequarter: 3/4,
+          onefive: 1.5,
+          "double": 2,
+          triple: 3
+        }
+        for (k in sizes) {
+          var v = sizes[k]
+          $("." + k).css({
+           height: Math.floor(win.height() * v) + "px"
+          });
+        }
+
+        function attach() {
+          // $(".search-box").stick_in_parent();
+
+          $(".container .search-box").stick_in_parent({
+            parent: ".container",
+            spacer: ".col-md-12"
+          });
+        }
+
+        attach();
+
+        $("#events_container").on("sticky_kit:stick", function(e) {
+          $(e.target).html("got stick event");
+        });
+
+        $("#events_container").on("sticky_kit:unstick", function(e) {
+          $(e.target).html("got unstick event");
+        });
+
+        $("#events_container").on("sticky_kit:bottom", function(e) {
+          $(e.target).html("got bottom event");
+        });
+
+        $("#events_container").on("sticky_kit:unbottom", function(e) {
+          $(e.target).html("got unbottom event");
+        });
+
+        $(document.body)
+          .on("click", ".recalc", function() {
+            console.log("Triggering recalc");
+            $(document.body).trigger("sticky_kit:recalc")
+          })
+          .on("click", ".detach", function() {
+            console.log("Triggering detach");
+            $(".container .item").trigger("sticky_kit:detach");
+          })
+          .on("click", ".attach", function() {
+            console.log("Triggering attach");
+            attach();
+          });
+
+        $(document.body).on("click", ".grow_element", function(e) {
+          var elm = $($(e.currentTarget).data("target"));
+          elm.animate({height: elm.height() * 2}, function() {
+            $(document.body).trigger("sticky_kit:recalc")
+          });
+        });
+
+      })();
+    </script> 
   </body>
 </html>

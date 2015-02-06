@@ -128,8 +128,11 @@ body.background {background-color: #f2f2f2;}
 
 
 .modal-body {padding:5% 10%; color:#6E6E6E;}
+.login-box .name,
 .modal-body .name {padding:1.5% 0 0 0; font-size: 17px; width: 30%; float: left;}
+.login-box .input,
 .modal-body .input {width: 70%; float: right;}
+.login-box .input-radio {padding-top: 10px;}
 .modal-body .input-radio {padding:1.5% 15px 0 15px;}
 
 .modal-body .form-inline select {width: 31%;}
@@ -167,21 +170,27 @@ body.background {background-color: #f2f2f2;}
    content: "";
 }
 
-.doctor-profile .nav-pills > li a {
-    font-size: 16px; 
+.nav-pills > li a,
+.doctor-profile .nav-pills > li.active a {
+    font-size: 18px; 
     background-color: white;
     margin-bottom: -2px;
     border: 2px solid #e6e6e6;
     border-bottom: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+    color: #2e2e2e;
+    border-bottom: none;
+
 }
-.nav-pills > li a {background-color: #f2f2f2; color:#585858;}
-.nav-pills > li.active > a, .nav-pills > li.active > a:hover, 
-.nav-pills > li.active > a:focus {
+
+.nav-pills > li a {
     background-color: #00aaaa; 
     color:white;
 }
+.nav-pills > li > a:hover, 
+.nav-pills > li > a:focus {background-color: #00aaaa; color:white;}
+
 
 .notification {width: 250px;}
 .notification li {padding: 1% 2%; font-size: 14px;}
@@ -343,7 +352,7 @@ body.background {background-color: #f2f2f2;}
 .join .intro button {
     padding: 10px 20px; 
     font-size: 20px; 
-    margin: 4% 0 -5% 0; 
+    margin-top:10px; 
     /*position: absolute;*/
     /*bottom:32%;
     left:43.8%;*/
@@ -400,11 +409,12 @@ body.background {background-color: #f2f2f2;}
 
 .search.container {width: 950px; padding-bottom:0px;}
 .search .map {
+    display: none;
     border: 1px solid #F5ECCE; 
     padding: 0px;  
     position: absolute;
     top:160px;
-    width: 323px;
+    width: 33%;
     display: block;
     right: 0px;
     /*right: calc(12.2% - 5%);*/
@@ -416,17 +426,23 @@ body.background {background-color: #f2f2f2;}
 
 .search .search-box select {width: 35%;}
 .search .search-box input[type="text"] {width: 45%;}
-.search .col-md-12 {padding: 0px; height: 160px;}
+
+.search .col-md-12 {padding: 0px; width: 100%!important;}
 .search .search-box {
     text-align: left; 
     background-color: #EBF4F6;
     padding:4% 2% 2% 2%;
     border:1px solid #d8d8d8;
     color:#2E2E2E;
-    position: fixed;
+    position: relative;
+    vertical-align: top;
     height: 160px;
     z-index: 5;
-    width: 950px;
+    
+    zoom: 1;
+    *display: inline;
+    vertical-align: top;
+    display: block;
 }
 
 
@@ -513,14 +529,22 @@ body.background {background-color: #f2f2f2;}
     padding: 4%;
     text-align: center;
 }
+.appoint .login-box .row {padding: 1% 2%;}
 
 .appoint .login-box .form-name {width: 40%; float: left;}
 .appoint .login-box .form-input {width: 60%; float: right;}
 
 .appoint .login-box p {padding-top: 10px; text-align: left;}
-.appoint .login-box input {width: 80%;}
+.appoint .login-box input {width: 90%;}
 .appoint .login-box .forgot {color:#00aaaa; margin-top: 2%;}
 
+.appoint .login-box .form-inline {padding-top: 10px; text-align: left;}
+.appoint .login-box select {width: 29%;}
+.appoint .login-box input[type="radio"],
+.appoint .login-box input[type="checkbox"] {width: auto;}
+.appoint .login-box input[type="checkbox"] {margin:1% 2% 0% 0%;}
+
+.appoint .login-box .input-radio span {padding-right: 8px;}
 
 .appoint .login-box .foot,
 .appoint .login-box .head {
@@ -781,4 +805,8 @@ body.background {background-color: #f2f2f2;}
 .breadcrumbs-alt span.info {display: block;}
 .breadcrumbs-alt span.step {display: none;}
 
+.panel-group .panel + .panel {margin-top: 0px; border:none;}
+.panel-group {margin-bottom: 0px;}
+.panel-heading.regist {border-top: 2px solid #ddd;}
+.panel-group .panel {border:none; border-radius: 0px; text-align: center;}
 
