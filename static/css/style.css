@@ -227,7 +227,7 @@ body.background {background-color: #f2f2f2;}
 .content-video {overflow: hidden; height: 100%; position: relative;}
 
 .home .video video{
-    width: 100%;
+    width: 1500px;
     position: absolute;
 }
 
@@ -570,6 +570,7 @@ body.background {background-color: #f2f2f2;}
 .appoint .doctor .col-md-5 {padding-right: 0px;}
 .appoint .doctor .col-md-12 {padding-bottom: 4%;}
 .appoint .doctor img {width: 100%;}
+.appoint textarea {width: 100%;}
 .appoint .doctor .header {
     background-color:#E6E6E6; 
     font-size: 16px;
