@@ -224,7 +224,10 @@ body.background {background-color: #f2f2f2;}
 .home .video {
     height: 82%;
 }
-.content-video {overflow: hidden; height: 100%; position: relative;}
+.home .img-background {
+    height: 100%;
+    width: 100%;
+}
 
 .home .video video{
     width: 1500px;

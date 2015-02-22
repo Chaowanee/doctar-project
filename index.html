@@ -1,0 +1,59 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<meta name="title" content="Background Change" /> 
+<meta name="description" content="Background Change" /> 
+
+<title>Background Change 9lessons</title> 
+ 
+<script type="text/javascript"> 
+var totalCount = 2;
+
+function ChangeIt() {
+var num =  Math.ceil( Math.random() * totalCount );
+document.body.background = 'static/image/room'+num+'.jpg';
+document.body.style.backgroundRepeat = "repeat";
+}
+</script> 
+<style>
+h1
+{
+font-size:36px;
+font-family:Arial, Helvetica, sans-serif
+}
+a
+{
+color:#80C8E5;
+
+}
+body
+{
+background-color:#000
+}
+</style>
+ 
+ 
+</head> 
+<body> 
+<div style="margin:50px 190px 50px; color:#000">
+<img src='http://demos.9lessons.info/bgchange/9lessonslogo.png' />
+<div style="background-color:#f2f2f2; min-height:500px; padding:10px; text-align:center; ">
+<h1>
+<a href="index.html">Click here</a> to refresh the page or press F5 <br/><br/>
+<div align="center">
+<a href="http://9lessons.info">9lessons.info</a> 
+</div>
+</h1>
+</div>
+</div>
+
+       
+<script type="text/javascript"> 
+ChangeIt();
+</script> 
+
+
+</body> 
+</html> 

@@ -13,11 +13,13 @@
 
     <div class="body home">
       <div class="video">
-        <div class="content-video">
+        <!-- <div class="content-video">
         <video loop="loop" preload="auto">
           <source src="video/video.mp4" type="video/mp4">
         </video>
-        </div>
+        </div> -->
+
+        <img src="static/image/room1.jpg" class="img-background">
 
         <div class="header">
           <a href="home.html"><img src="static/image/logo.png"></a>
@@ -240,9 +242,13 @@
  
   </body>
 
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $('video').get(0).play()
-    });
-  </script>
+  <script type="text/javascript"> 
+  var totalCount = 2;
+  ChangeIt();
+
+  function ChangeIt() {
+    var num =  Math.ceil( Math.random() * totalCount );
+    $(".home .img-background").attr("src","static/image/room"+num+".jpg"); 
+  }
+  </script> 
 </html>

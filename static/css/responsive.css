@@ -31,11 +31,6 @@
     .join .intro button {font-size: 18px;}
 
     .breadcrumbs-alt li.current, .breadcrumbs-alt li {padding: 2% 3%;}
-
-
-
-
-
 }
 
 @media (max-width: 992px) {
@@ -91,10 +86,6 @@
 
     .home .more.container {padding: 5% 2%;}
     .doctor-profile .nav-pills > li a {font-size: 16px;}
-
-   /* .home .video video{width: 140%;}*/
-    /*.home .video {height: 70%;}*/
-
 }
 
 @media (max-width: 850px) {
@@ -214,8 +205,6 @@
     .join .row {padding: 0 4%;}
     .join .partner .partner-left, .join .partner .partner-right {width: 100%;}
 
-    
-
     .modal-content p {font-size: 15px;}
 
     .footer .col-footer, .footer .logo-footer {
@@ -227,9 +216,6 @@
     .footer  {padding-top:30px;}
     .footer .responsive-footer, .footer .logo-footer {width: 55%;}
     .footer img {width: 70%;}
-/*
-    .home .video video{width: 150%;}*/
-    /*.home .video {height: 60%;}*/
 
     #login .modal-content {width: 80%; left:10%;}
     #register .modal-content {width: 90%; left:5%;}
@@ -344,10 +330,6 @@
     #register .modal-content,
     #login .modal-content {width: 100%; left:0px;}
 
-
-    /*.home .video video{width: 150%;}*/
-    /*.home .video {height: 50%;}*/
-
     .modal-body p {margin: 0 0 6px}
     .modal-title,
     .modal-body button {font-size: 14px;}
@@ -370,11 +352,12 @@
 
 }
 @media (max-width: 418px) {
+    .body.search .col-md-12 , .search .search-box{display: none;}
   
     /*.breadcrumbs-alt li.current, .breadcrumbs-alt li {padding: 2% 3.3%;}*/
     .home .more-info p {font-size: 14px;}
 
-    .search .search-box p {font-size: 12px;}
+    /*.search .search-box p {font-size: 12px;}*/
 
     .nav-pills > li  > a span {display: none;}
     .patient .tab-content p {font-size: 12px;}
@@ -386,8 +369,7 @@
 } 
 
 @media (max-width: 378px) {
-    /*.home .video video{width: 155%;}*/
-    /*.home .video {height: 45%;}*/
+
     .home .video .bg-search, .home .video .search-box {
         padding-top: 0px;
         padding-bottom: 0px;
@@ -401,11 +383,12 @@
     /*.search .search-box {width: 96%;}*/
     .search-box input[type="radio"] {margin:0 1%;}
     .appoint .login-box select {width: 90%; margin-bottom: 4px;}
+    .body.search .col-md-12 {display: none;}
 }
 
 @media (max-width: 335px) {
-    .search .search-box,
-    .search .col-md-12 {display: none;}
+    /*.search .search-box,*/
+    
 }
 
 
